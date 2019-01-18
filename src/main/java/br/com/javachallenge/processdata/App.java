@@ -1,5 +1,8 @@
 package br.com.javachallenge.processdata;
 
+import java.io.File;
+import java.io.IOException;
+
 import br.com.javachallenge.processdata.util.Processor;
 import br.com.javachallenge.processdata.util.ProcessorFactory;
 
@@ -18,5 +21,10 @@ public class App {
         String processorValue = args[2];
         
         Processor processor = ProcessorFactory.getProcessor(processorType);
+        try {
+			processor.processFile(processorValue, new File(fileName));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
