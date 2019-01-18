@@ -19,8 +19,7 @@ The input file represents a list of places and people at different times. There 
  * c. City
  * d. ID formatted as "12345678-Z"
 
-========
-#### Program setup
+## Setup
 
 Maven and JDK 8+ is necessary to setup this project. 
  * [Apache Maven](https://maven.apache.org/download.cgi)
@@ -31,3 +30,22 @@ After you have them installed, clone this repository and run the following comma
 ```shell
     mvn package
 ```
+
+This command will generate a folder named target containing the runnable JAR process-data.jar.
+
+## Commands supported
+
+1. Will print the list of names and ID's belonging to people that have been in that city:
+```bash
+java -jar process-data.jar {FILE} CITY {CITY_NAME}
+``` 
+
+2. Will print the list of cities that this person has been to:
+```bash
+java -jar process-data.jar {FILE} ID {ID_VALUE} (ID format example for input: 12345678Z)
+``` 
+
+## Output examples
+
+1. java -jar process-data.jar input.txt CITY CARTAGENA must output an unordered unrepeated
+list of people and IDs that have been to CARTAGENA.
