@@ -19,6 +19,7 @@ The input file represents a list of places and people at different times. There 
  * c. City
  * d. ID formatted as "12345678-Z"
 
+========
 #### Program setup
 
 Maven and JDK 8+ is necessary to setup this project. 
