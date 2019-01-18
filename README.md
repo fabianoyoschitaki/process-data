@@ -52,6 +52,7 @@ java -jar process-data.jar {FILE} ID {ID_VALUE}
 java -jar process-data.jar input.txt CITY CARTAGENA
 ```
 
+Expected output:
 ```
 Mitchell Newton,25384390A
 Rhonda Hopkins,54315871Z
@@ -65,6 +66,7 @@ Jake Salazar,38399984N
 java -jar process-data.jar input.txt ID 54808168L
 ```
 
+Expected output:
 ```
 MADRID
 BARCELONA
