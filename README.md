@@ -47,5 +47,26 @@ java -jar process-data.jar {FILE} ID {ID_VALUE}
 
 ## Output examples
 
-1. java -jar process-data.jar input.txt CITY CARTAGENA must output an unordered unrepeated
-list of people and IDs that have been to CARTAGENA.
+1. The following command must output an unordered unrepeated list of people and IDs that have been to CARTAGENA.
+```bash
+java -jar process-data.jar input.txt CITY CARTAGENA
+```
+
+```
+Mitchell Newton,25384390A
+Rhonda Hopkins,54315871Z
+Alexander Arnold,21743514G
+Susan Holland,04810023X
+Jake Salazar,38399984N
+```
+
+2. The following command must output an unordered unrepeated list of cities that Shelley Payne have been to.
+```bash
+java -jar process-data.jar input.txt ID 54808168L
+```
+
+```
+MADRID
+BARCELONA
+OVIEDO
+```
