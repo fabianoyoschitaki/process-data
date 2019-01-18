@@ -1,5 +1,8 @@
 package br.com.javachallenge.processdata;
 
+import br.com.javachallenge.processdata.util.Processor;
+import br.com.javachallenge.processdata.util.ProcessorFactory;
+
 /**
  * Hello world!
  *
@@ -13,5 +16,7 @@ public class App {
         String fileName = args[0];
         String processorType = args[1];
         String processorValue = args[2];
+        
+        Processor processor = ProcessorFactory.getProcessor(processorType);
 	}
 }
