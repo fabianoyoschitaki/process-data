@@ -27,8 +27,8 @@ Maven and JDK 8+ is necessary to setup this project.
 
 After you have them installed, clone this repository and run the following command to build a runnable jar: 
 
-```shell
-    mvn package
+```bash
+mvn package
 ```
 
 This command will generate a folder named target containing the runnable JAR process-data.jar.
@@ -40,9 +40,9 @@ This command will generate a folder named target containing the runnable JAR pro
 java -jar process-data.jar {FILE} CITY {CITY_NAME}
 ``` 
 
-2. Will print the list of cities that this person has been to:
+2. Will print the list of cities that this person has been to (ID format example for input: 12345678Z):
 ```bash
-java -jar process-data.jar {FILE} ID {ID_VALUE} (ID format example for input: 12345678Z)
+java -jar process-data.jar {FILE} ID {ID_VALUE} 
 ``` 
 
 ## Output examples
