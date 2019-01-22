@@ -2,7 +2,6 @@ package br.com.javachallenge.processdata.util;
 
 /**
  * This class implements Processor interface.
- * 
  * It processes lines for when CITY argument is specified. 
  * 
  * @author Fabiano Yoschitaki

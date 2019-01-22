@@ -5,7 +5,6 @@ import java.util.Set;
 
 /**
  * This class implements Processor interface.
- * 
  * It processes lines for when ID argument is specified. 
  * 
  * @author Fabiano Yoschitaki
@@ -13,6 +12,9 @@ import java.util.Set;
  */
 public class IdProcessor implements Processor {
 
+	/**
+	 * A set of cities to keep track of repeated values
+	 */
 	private Set<String> cities = new HashSet<>();
 
 	/**
