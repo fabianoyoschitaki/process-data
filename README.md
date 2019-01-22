@@ -31,13 +31,13 @@ Maven and JDK 8+ is necessary to setup this project.
  * [Apache Maven](https://maven.apache.org/download.cgi)
  * [JDK 8](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
 
-After you have them installed, clone this repository and run the following command to build a runnable jar: 
+After you have them installed, clone this repository and run the following command to run unit tests and output a runnable jar: 
 
 ```bash
-mvn package
+mvn test package
 ```
 
-This command will generate a folder named target containing the runnable JAR process-data.jar.
+This command will run all unit tests and generate a folder named target containing the runnable JAR file named process-data.jar as well as support files/folders.
 
 ## Commands supported
 
