@@ -7,7 +7,14 @@ import br.com.javachallenge.processdata.util.Processor;
 import br.com.javachallenge.processdata.util.ProcessorFactory;
 
 /**
- * Hello world!
+ * This class contains the main method of the application.
+ * 
+ * Expected args values are: 
+ * 
+ * 1. {FILE} CITY {CITY_NAME}
+ * 2. {FILE} ID {ID_VALUE}
+ * 
+ * @author Fabiano Yoschitaki
  *
  */
 public class App {
