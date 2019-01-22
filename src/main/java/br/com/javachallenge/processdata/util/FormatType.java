@@ -10,8 +10,8 @@ public enum FormatType {
 	/**
 	 * Format F1
 	 */
-	FORMAT_ONE("F1", ","), 
-	
+	FORMAT_ONE("F1", ","),
+
 	/**
 	 * Format F2
 	 */
@@ -21,14 +21,14 @@ public enum FormatType {
 	 * Value of the format
 	 */
 	private String value;
-	
+
 	/**
 	 * Delimiter character of the format
 	 */
 	private String delimiter;
 
 	/**
-	 * Private constructor 
+	 * Private constructor
 	 * 
 	 * @param value
 	 * @param delimiter

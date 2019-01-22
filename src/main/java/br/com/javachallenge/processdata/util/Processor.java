@@ -7,22 +7,22 @@ import java.io.IOException;
 
 /**
  * This interface provides processLine method, implemented by different classes
- * based on the type of processing passed when running the application. 
- *  
+ * based on the type of processing passed when running the application.
+ * 
  * @author Fabiano Yoschitaki
  *
  */
 public interface Processor {
-	
+
 	/**
-	 * Default method to read a specific text format file  
+	 * Default method to read a specific text format file
 	 * 
 	 * @param filterValue
 	 * @param inputFile
 	 * @throws IOException
 	 */
 	default void processFile(String filterValue, File inputFile) throws IOException {
-		try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))){
+		try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
 			String line = null;
 			FormatType currentFormatType = null;
 			while (reader.ready()) {
