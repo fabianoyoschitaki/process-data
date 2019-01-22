@@ -23,6 +23,8 @@ For this project, an interface named Processor was created in order to represent
 
 Also, to support the different types of Processor, a Factory class (Creational Design Pattern) with the creation rules was added.  
 
+Virtually, there's no restriction regarding to the size of the text input file. This is due to the use of BufferedReader class to process the text file at run time, keeping the space complexity of the code constant after a certain point. 
+
 ## Setup
 
 Maven and JDK 8+ is necessary to setup this project. 
