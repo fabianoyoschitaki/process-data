@@ -31,21 +31,24 @@ public interface Processor {
 					currentFormatType = FormatType.FORMAT_ONE;
 				} else if (FormatType.FORMAT_TWO.getValue().equals(line)) {
 					currentFormatType = FormatType.FORMAT_TWO;
-				} else {
+				} else if (line.startsWith("D ")){
 					String[] tokens = line.substring(2).split(currentFormatType.getDelimiter());
-					processLine(filterValue, tokens[0].trim(), tokens[1].trim(), tokens[2].trim().replace("-", ""));
+					String result = processLine(filterValue, tokens[0].trim(), tokens[1].trim(), tokens[2].trim().replace("-", ""));
+					if (result != null) {
+						System.out.println(result);
+					}
 				}
 			}
 		}
 	}
 
 	/**
-	 * This method processes a single String line
+	 * This method processes a single String line and returns the result
 	 * 
 	 * @param desiredValue
 	 * @param name
 	 * @param city
 	 * @param id
 	 */
-	void processLine(String desiredValue, String name, String city, String id);
+	String processLine(String desiredValue, String name, String city, String id);
 }

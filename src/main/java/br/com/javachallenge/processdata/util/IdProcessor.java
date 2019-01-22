@@ -21,10 +21,11 @@ public class IdProcessor implements Processor {
 	 * This method prints city to STDOUT if desiredValue is equals to id and if city
 	 * is not repeated
 	 */
-	public void processLine(String desiredValue, String name, String city, String id) {
+	public String processLine(String desiredValue, String name, String city, String id) {
 		if (desiredValue.equals(id) && !cities.contains(city)) {
-			System.out.println(city);
 			cities.add(city);
+			return city;
 		}
+		return null;
 	}
 }
