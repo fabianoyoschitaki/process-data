@@ -17,10 +17,23 @@ public enum FormatType {
 	 */
 	FORMAT_TWO("F2", ";");
 
+	/**
+	 * Value of the format
+	 */
 	private String value;
+	
+	/**
+	 * Delimiter character of the format
+	 */
 	private String delimiter;
 
-	FormatType(String value, String delimiter) {
+	/**
+	 * Private constructor 
+	 * 
+	 * @param value
+	 * @param delimiter
+	 */
+	private FormatType(String value, String delimiter) {
 		this.value = value;
 		this.delimiter = delimiter;
 	}
