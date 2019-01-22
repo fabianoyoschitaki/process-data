@@ -19,6 +19,10 @@ The input file represents a list of places and people at different times. There 
  * c. City
  * d. ID formatted as "12345678-Z"
 
+For this project, an interface named Processor was created in order to represent each type of processing (CITY, ID), making it easy to add new future implementations (by NAME for example). 
+
+Also, to support the different types of Processor, a Factory class (Creational Design Pattern) with the creation rules was added.  
+
 ## Setup
 
 Maven and JDK 8+ is necessary to setup this project. 
